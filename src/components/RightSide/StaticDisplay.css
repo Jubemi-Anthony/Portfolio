@@ -1,0 +1,63 @@
+.StaticDisplay{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+h4{
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+.R_Quote, .R_Question, .R_Blog, .R_Contact{
+    border-bottom: 1px solid #f0eeee83;
+    padding-bottom: 5px;
+}
+.quote, .question, .blog, .contact{
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+.blog{
+    padding: 0;
+    padding-bottom: 5px;
+}
+.quote p:first-child, 
+.question p:first-child, 
+.contact p:first-child,
+.blog p:nth-child(2){
+    font-size: 1.2rem;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+.quote p:last-child, 
+.question p:nth-child(2), 
+.blog p:nth-child(3){
+    font-size: 0.6rem;
+    text-align: right;
+    margin-top: 5px;
+}
+.question p:last-child, 
+.blog .linker,
+.contact .cv
+{
+    text-align: center;
+    background-color:#212329;
+    color: #f0eeee;
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 2px 0;
+    border: none;
+    border-radius: 5px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.R_Blog img{
+    width: 100%;
+    height: 150px;
+}
