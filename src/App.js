@@ -41,7 +41,7 @@ function App() {
     <main>
       <div className="dynamic">
         <header><Header/></header>
-        <Routes>
+        <Routes baseName="/Portfolio">
           <Route path= "/" element = {<Home/>}/>
           <Route path= "Blog" element = {<Blog setChange={setChange} change={change}/>}/>
           <Route path= {`Post/:id`} element = {<Post/>}/>
