@@ -1,0 +1,19 @@
+.Ask form{
+    width: 50%;
+    margin: auto;
+    position: relative;
+    margin-top: 10%;
+}
+.Ask img{ 
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    cursor: pointer;
+}
+
+@media(max-width: 900px){
+    .Ask form{
+        margin-top: 30%;
+        width: 80%;
+    }
+}

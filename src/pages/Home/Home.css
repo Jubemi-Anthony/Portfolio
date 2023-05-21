@@ -1,0 +1,132 @@
+.Home{
+    background-color: #212329;
+    min-height: 95vh;
+}
+.introduction{
+    padding-top: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 450px;
+}
+h1{
+    font-size: 5rem;
+    text-align: center;
+}
+.sec-1{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0 20px 0;
+}
+.describe p{
+    margin-right: 5px;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+}
+.sec-2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.Social{
+    display: flex;
+    gap: 6px;
+}
+.Social img:hover{
+    transform: translateY(-8px);
+    transition: 0.5s ease-in-out;
+}
+.hire, .mobile-cv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    font-weight: bold;
+    background-color: #f0eeee;
+    color: black;
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    rotate: 20deg;
+    margin-right: 10%;
+    cursor: pointer;
+}
+h5{
+    font-size: 0.6rem;
+    text-decoration: underline;
+}
+.about{
+    font-size: 0.75rem;
+    margin-top: 20px;
+    line-height: 1.4em;
+}
+.about span{
+    font-weight: bold;
+}
+.about div{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.introduction{
+    position: relative;
+}
+.mobile-cv{
+    opacity: 0;
+    cursor: unset;
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+}
+
+@media(max-width: 700px){
+    .Home .container{
+        width: 95%;
+    }
+    .introduction{
+        padding-top: 0px;
+        min-height: 450px;
+    }
+    h1{
+        font-size: 2rem;
+        text-align:unset
+    }
+    .sec-1{
+        flex-direction: column;
+        margin: 2px 0 3px 0;
+    }
+    .describe p{
+        margin-right: 3px;
+    }
+    .icon{
+        width: 18px;
+        height: 18px;
+    }
+    .sec-2{
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 5px;
+    }
+    .hire, .mobile-cv{
+        font-size: 0.6rem;
+        border-radius: 0%;
+        height: 20px;
+        width: 50px;
+        rotate: 0deg;
+        margin-left: auto;
+    }
+    .mobile-cv{
+        opacity: 1;
+        width: 80px;
+        text-transform: uppercase;
+        margin-right: 0;
+    }
+    .about{
+        margin-top: 10px;
+    }
+    .about div{
+        gap: 1px;
+    }
+}

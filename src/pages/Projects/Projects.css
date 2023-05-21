@@ -1,0 +1,106 @@
+.Projects{
+    padding: 20px 0;
+    background-color: #212329;
+    min-height: 90vh;
+}
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+}
+.project-box{
+    border: 1px solid #9a9da2;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-bottom: 10px;
+}
+.project-details .about{
+    margin-top: 2px;
+    color: rgb(192, 190, 190);
+}
+.project-details .project-tags{
+    font-size: 0.6rem;
+    display: flex;
+    gap: 5px;
+}
+.project{
+    width: 100%;
+    height: 250px;
+}
+.project img{
+    width: 100%;
+    height: 50%;
+}
+.project-details{
+    color: white;
+    width: 90%;
+    margin: auto;
+}
+.project-actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    padding: 0 10px;
+}
+.project-actions button{
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    gap: 5px;
+    color: white;
+}
+.project-actions .icon{
+    width: 15px;
+    height: 15px;
+}
+.project-actions .icon-2{
+    width: 21px;
+    height: 26px;
+}
+@media(max-width: 900px){
+    .project-grid{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+@media(max-width: 700px){
+    .Projects{
+        padding: 10px 0;
+    }
+    .project-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+        width: 95%;
+        margin-top: 10px;
+    }
+    .project{
+        width: 100%;
+        height: 220px;
+    }
+    .project img{
+        width: 100%;
+        height: 45%;
+    }
+    .project-details{
+        width: 97%;
+    }
+    .project-actions{
+        margin-top: 2px;
+        padding: 0 8px;
+    }
+    .project-actions .icon{
+        width: 15px;
+        height: 15px;
+    }
+    .project-actions .icon-2{
+        width: 21px;
+        height: 23px;
+    }
+}

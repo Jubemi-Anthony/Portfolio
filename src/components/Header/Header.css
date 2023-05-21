@@ -1,0 +1,25 @@
+nav{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #212329;
+    border-bottom: 1px solid #f0eeee83;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+}
+nav .active{
+    background-color: white;
+    color: #212329;
+    padding: 2px;
+    font-weight: bold;
+}
+@media(max-width: 900px){
+    nav{
+        padding: 10px 8px;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        z-index: 9;
+        flex-wrap: wrap;
+    }
+}
