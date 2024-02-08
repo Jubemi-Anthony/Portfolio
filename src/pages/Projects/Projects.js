@@ -10,6 +10,9 @@ export default function Projects({setChange, change}){
     const projects = useSelector((state) => state.projects);
     const [searchProject, setsearchProject] = useState("");
 
+    projects.map((project)=>{
+        console.log(project.project.language, project.project.title);
+    })
     let loaded;
     projects.length === 0 ? loaded = false : loaded = true;
  
@@ -46,7 +49,7 @@ export default function Projects({setChange, change}){
                                     </div>
                                     <div className="project-tags">
                                         {
-                                            project.project.language.map((language)=> (<p>#{language}</p>))
+                                            project.project?.language.map((language)=> (<p>#{language}</p>))
                                         }
                                     </div>
                                 </div>
